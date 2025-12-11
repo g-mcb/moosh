@@ -1,3 +1,4 @@
+/* ------------------ Global ------------------ */
 html {
     background-color: #1e1e2e;
     color: #cdd6f4;
@@ -6,24 +7,48 @@ html {
     margin: auto;
 }
 
+/* ------------------ Links ------------------ */
 a {
     color: #89b4fa;
     text-decoration: none;
 }
 
+/* ------------------ Body & Cards Container ------------------ */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers cards horizontally */
+    gap: 20px; /* space between cards */
+    padding: 20px;
+}
+
+/* ------------------ Card ------------------ */
 .card {
     width: 200px;
-    margin-left: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
     background-color: #181825;
     color: white;
-    transition: background-color 0.3s ease;
-    gap: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Optional: hover effect */
+.card:hover {
+    background-color: #272735;
+    transform: translateY(-5px);
+}
+
+/* ------------------ Image ------------------ */
+.img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ------------------ Play Button ------------------ */
 .play {
     background-color: #007BFF;
     color: #fff;
@@ -32,13 +57,9 @@ a {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .play a {
     color: white;
-}
-
-.img {
-    width: 200px;
-    height: 300;
 }
