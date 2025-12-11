@@ -1,7 +1,7 @@
 /* ------------------ Global ------------------ */
 html {
     background-color: #1e1e2e;
-    color: #cdd6f4;
+    color: #e0d7ff; /* lighter violet-ish text */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     margin: 0;
@@ -15,7 +15,7 @@ body {
 
 /* ------------------ Links ------------------ */
 a {
-    color: #89b4fa;
+    color: #c084fc; /* violet links */
     text-decoration: none;
 }
 
@@ -32,16 +32,16 @@ a {
 .card {
     width: 200px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.3); /* violet shadow */
     padding: 20px;
     text-align: center;
-    background-color: #181825;
-    color: white;
+    background-color: #2a1e3f; /* dark violet card */
+    color: #e0d7ff;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover {
-    background-color: #272735;
+    background-color: #3c2a5f; /* lighter violet on hover */
     transform: translateY(-5px);
 }
 
@@ -55,7 +55,7 @@ a {
 
 /* ------------------ Play Button ------------------ */
 .play {
-    background-color: #007BFF;
+    background-color: #9f7aea; /* violet button */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -63,6 +63,11 @@ a {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.play:hover {
+    background-color: #b794f4; /* lighter violet on hover */
 }
 
 .play a {
